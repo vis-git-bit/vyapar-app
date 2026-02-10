@@ -1,0 +1,31 @@
+.ratings-section{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.section-content{
+    width:100%;
+    text-align:center;
+}
+.main-T{
+    color:rgba(0, 0, 0, 0.822);
+    margin-top:60px;
+}
+.star{
+    margin-bottom:25px;
+    margin-top: 25px;
+}
+.star-color {
+    background-color:rgba(218, 170, 14, 0.849);
+}
+.line-2{
+    color:green;
+}
+
+/*responsive*/
+@media(max-width:768px){
+    .main-T{
+        font-size: small;
+    }
+}

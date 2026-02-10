@@ -1,0 +1,122 @@
+/* main containers of plan */
+.plan-container{
+    text-align:center;
+    padding:40px 20px;
+}
+/* for device buttons */
+.device-buttons{
+    margin:20px 0;
+}
+.device-buttons button{
+    padding:8px 18px;
+    border:1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+.device-buttons .active{
+    background: red;
+    color:white;
+    border:none;
+}
+/* card of all plans container */
+.cards-plans-container{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    flex-wrap: wrap;
+}
+/* plan card */
+.plan-card{
+    width:250px;
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding:20px;
+    background: white;
+    text-align: left;
+}
+.plan-price{
+    font-size:20px;
+    font-weight:600;
+}
+.price-amount {
+  color: #e53935; 
+}
+.price-period {
+  color: #9e9e9e; 
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.plan-ideal{
+    color:grey;
+    font-size:14px;
+    margin-bottom:10px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+li{
+    margin: 6px 0;
+}
+.trial-btn{
+     width:100%;
+     border:1px solid grey;
+     padding:10px;
+     background:white;
+     color:black;
+     border-radius:6px;
+     margin-top: 10px;
+     cursor:pointer;
+}
+.trial-btn:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+
+/* Desktop → Retail = 3rd card */
+.plan-container:has(.device-buttons button.active:first-child)
+.cards-plans-container .plan-card:nth-child(3) {
+  border: 2px solid #e53935;
+  position: relative;
+}
+
+/* Mobile  Retail = 4th card */
+.plan-container:has(.device-buttons button.active:last-child)
+.cards-plans-container .plan-card:nth-child(4) {
+  border: 2px solid #e53935;
+  position: relative;
+}
+/* Desktop badge */
+.plan-container:has(.device-buttons button.active:first-child)
+.cards-plans-container .plan-card:nth-child(3)::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e53935;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* Mobile badge */
+.plan-container:has(.device-buttons button.active:last-child)
+.cards-plans-container .plan-card:nth-child(4)::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e53935;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+}

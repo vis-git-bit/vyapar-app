@@ -1,0 +1,99 @@
+.section2 {
+    display:flex;
+    justify-content: center;
+    background-color: #c2b7b721;
+    padding: 40px 80px;
+    overflow-x: hidden;
+}
+.section2-content{
+  display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:86px;
+    width: 100%;
+}
+.card-1 {
+    text-align: center;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+.card-2 {
+    text-align: center;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+.card-3 {
+    text-align: center;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+.card-4 {
+    text-align: center;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+.card-5 {
+    text-align: center;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+.section2-content h3{
+    font-size: 25px;
+    font-weight: 400;
+    color:rgba(7, 7, 41, 0.76)
+}
+.section2-content p{
+    margin-top: 10px;
+    color:rgba(53, 51, 51, 0.664)
+}
+
+
+/*responsive for tablet*/
+ @media (max-width:1024px){
+    .section2 {
+        width: 100%;
+        padding: 40px 20px;
+        overflow-x: scroll;
+    }
+    
+    .section2-content{
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        min-width: 140px;
+    }
+    .section2-content h3 {
+        font-size: 22px; 
+    }
+
+    .section2-content p {
+        font-size: 16px; 
+    }
+ }
+
+/*responsive for mobile*/
+ @media (max-width:768px){
+    .section2 {
+        padding: 30px 10px;
+    }
+    
+    .section2-content{
+        gap: 30px;
+        padding: 0 10px;
+    }
+    
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        min-width: 120px;
+    }
+    
+    .section2-content h3{
+        font-size: 18px;
+    }
+    
+    .section2-content p{
+        font-size: 14px;
+    }
+}

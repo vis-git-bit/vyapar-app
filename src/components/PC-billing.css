@@ -1,0 +1,186 @@
+.billing-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.billing-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.billing-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.billing-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: rgba(255, 0, 0, 0.507);
+  color: rgb(136, 7, 7);
+  border-color: rgb(136, 7, 7);
+}
+
+.billing-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.billing-center {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billing-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.billing-right {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/*responsive for tablet*/
+@media (max-width: 1024px) {
+  .billing-section {
+    padding: 30px 20px;
+  }
+
+  .billing-header {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .billing-tabs {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .tab-button {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  .billing-display {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .billing-center {
+    width: 100%;
+  }
+
+  .billing-image {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .billing-right {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*responsive for mobile*/
+@media (max-width: 767px) {
+  .billing-section {
+    padding: 20px 15px;
+  }
+
+  .billing-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .billing-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .tab-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .billing-display {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .billing-center {
+    width: 100%;
+  }
+
+  .billing-image {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .billing-right {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .billing-section {
+    padding: 15px 10px;
+  }
+
+  .billing-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .billing-tabs {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .tab-button {
+    padding: 8px 14px;
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .billing-image {
+    max-width: 85%;
+  }
+
+  .billing-right {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,84 @@
+.vyapar-container{
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px;
+}
+.section1-content{
+    display: flex;
+    justify-content: space-between;
+    gap:70px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.section1-text p {
+    margin-top: 30px;
+    font-size: 20px;
+    color:rgba(53, 51, 51, 0.664)
+       
+}
+.section1-text h1 {
+    font-size: 57px;
+    font-weight: 600;
+   color:rgba(7, 7, 41, 0.76)
+}
+.section1-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color:red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+   width: 70%;
+    font-size: 16px;
+}
+.section1-image img{
+    height: 350px;
+    width: 350px;
+}
+
+/* responsive for tablet*/
+
+@media ( max-width :1024px){
+    .section1{
+        padding:100px 40px;
+    }
+    .section1-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+       .section1-text h1 {
+        font-size: 42px; 
+    }
+    .section1-text p {
+        font-size: 18px; 
+    }
+    
+    .section1-btn{
+        width:50%;
+    }
+}
+
+/*responsive for mobile*/
+@media(max-width:768px){
+    .section1{
+        padding:60px 20px;
+    }
+   .section1-text h1 {
+        font-size: 28px;
+    }
+    .section1-text p {
+        font-size: 14px; 
+    }
+    .section1-btn{
+        width:100%;
+    }
+}
+
