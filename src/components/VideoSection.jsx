@@ -19,7 +19,7 @@ const VideoSection = () => {
             <video className="demo-video"   controls
                                              muted
                                             playsInline>
-              <source src="/video1.mp4" type="video/mp4" />
+              <source src="/Vyapar-Video.mp4" type="video/mp4" />
               
             </video>
             
