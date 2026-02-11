@@ -1,10 +1,10 @@
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     right:0;
     z-index: 1001;
-    background-color: rgba(245, 245, 245, 0.774);
+    background-color:#ffffff;
     width: 100%;
 }
 
@@ -27,11 +27,16 @@
     display: flex;
     align-items: center;
 }
+.nav-options{
+    margin-right: 40px;
+}
 
 .navbar-part a {
     margin-right: 30px;
     text-decoration: none;
-    color: #313030;
+    color: #151515e3;
+    font-size: medium;
+    font-weight: 600;
     cursor: pointer;
 }
 

@@ -31,8 +31,9 @@ const Navbar = () => {
                         <span></span>
                     </div>
 
-                   
+                    <div className="nav-options">
                     <div className={menuOpen ? "navbar-part active" : "navbar-part"}>
+
                         <Link to="/vyapar" onClick={() => setMenuOpen(false)}>
                             Home
                         </Link>
@@ -56,6 +57,7 @@ const Navbar = () => {
                         </a>
                         
                       
+                    </div>
                     </div>
                 </nav>
             </div>
